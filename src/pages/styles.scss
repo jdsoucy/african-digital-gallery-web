@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+html, body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body{
+  font-family: 'Lato', sans-serif;
+  background: white;
+  color:black;
+}
+#___gatsby,
+#gatsby-focus-wrapper,
+#layout{
+  height: 100%;
+}
+.dark-theme{
+  background: black;
+  color:white;
+  a,button{
+    color:white;
+  }
+}
+h1, h2, h3, h4 {
+  font-weight: 700;
+  line-height: 1.2em;
+  margin: 0 0 0.8em;
+}
+h1 {
+  font-size: calc(48.0006px);
+  margin: 0 0 40px 0;
+}
+h2 {
+  font-size: calc(36px);
+}
+h3 {
+  font-size: calc(24.0012px);
+}
+h4 {
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-bottom: 0.4em;
+}
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+p {
+  margin: 0 0 13px;
+  line-height: 32.4px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  max-width: 900px;
+}
+a{
+  color: black;
+}
+button{
+  cursor: pointer;
+}
+
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 6rem 3rem;
+}
+.hero{
+  padding-bottom: 2rem;
+}
+.thumb{
+  width: 200px;
+  height: 200px;
+}
+.artworks{
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  padding-bottom: 2rem;
+  a{
+    text-decoration: none;
+  }
+}
+article{
+  width: 200px;
+  margin: 5px;
+  .title{
+    font-weight: bold;
+    font-size: 16px;
+  }
+}

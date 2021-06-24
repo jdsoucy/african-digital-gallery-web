@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { Router } from "@reach/router"
 import Layout from './components/layout';
-import Hero from './components/hero'
 import './styles.scss'
 
 const categories = {
@@ -128,15 +127,13 @@ const items = [
 const Home = () => {
   return (
     <Layout>
-      <Hero />
-      <div className="container">
-        <section>
-          <h1>African Digital Gallery</h1>
-          <p>Founded in 2021 by Alfa Barry and Jérôme D.Soucy, African Digital Gallery (ADG) is a pioneering gallery based on the internet.</p>
-          <p>The gallery focuses on highlighting, in NFT, modern and contemporary fine art from the Horn of Africa region and its Diasporas.</p>
-        </section>
-      </div>
-{/*      
+      <section className="hero">
+        <h1>African Digital Gallery</h1>
+        <p>
+          ADG is an online gallery that focuses on NFT and awesome artists from Africa.
+        </p>
+        <p>Founded in 2021 by Alfa Barry and Jay D.Soucy, African Digital Gallery (ADG) is a pioneering gallery based on the internet. Described as one of the "Most Important Young Galleries in the World" (unknown source). The gallery focuses on highlighting, in NFT, modern and contemporary fine art from the Horn of Africa region and its Diasporas.</p>
+      </section>
       <section>
         <h2>Artworks</h2>
         {Object.keys(categories).map((key) => (
@@ -163,7 +160,7 @@ const Home = () => {
         <li>Click on the artwork that you want</li>
         <li>Click the buy button</li>
         <li>You will be redirected to Binance NFT website where you can buy, bid and and sell Miss Pralina NFTs</li>
-      </ul> */}
+      </ul>
     </Layout>
   )
 }
