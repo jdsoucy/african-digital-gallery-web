@@ -6,11 +6,22 @@ export default function Layout({ children }) {
 
   useEffect(() => {
     setIsDarkTheme(localStorage.getItem('isDarkTheme') === 'true' || false)
+    if (localStorage.getItem('isDarkTheme') === 'true') {
+      document.body.style = 'background: black;';
+    } else {
+      document.body.style = 'background: white;';
+    }
   }, [])
 
   const toggleTheme = () => {
     setIsDarkTheme(!isDarkTheme);
     localStorage.setItem('isDarkTheme', !isDarkTheme);
+    if (isDarkTheme === true) {
+      document.body.style = 'background: white;';
+    } else {
+      document.body.style = 'background: black;';
+
+    }
   }
 
   return (

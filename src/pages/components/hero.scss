@@ -16,7 +16,7 @@
   a,button{
     background: white;
     padding: 1rem 2rem;
-    color: black;
+    color: white;
     border-radius: 2px;
     border: 0;
     font-size: 1.5rem;
@@ -28,6 +28,11 @@
     position: relative;
     text-align: center;
     line-height: 40px;
+    text-transform: uppercase;
+    background: url('../../../static/MP-Freestyle-II-web-small.png');
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0 7px rgb(0 0 0);
     span{display: block;}
     &:hover{
       top: -4px;
@@ -39,8 +44,6 @@
     background-image: url('../../../static/bg-light.png');
     background-color:black;
     a,button{
-      background: black;
-      color: white;
       border-color: white;
     }
   }
